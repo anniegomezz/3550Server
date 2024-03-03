@@ -1,0 +1,45 @@
+fix key thing
+
+check the jwks jwt 
+
+
+example:
+valid JWT and it's decoded contents
+eyJhbGciOiJSUzI1NiIsImtpZCI6IjdlZjcyYTAxZTk0MjFjNjQ0NjJjNmZkOGQ1YWRiMTUwODcyZjE0Zjc2NDc3NDUxNjEyZDZjN2ZhZTQ0YTJjNTYiLCJ0eXAiOiJKV1QifQ.eyJ1c2VybmFtZSI6InJhbmRvbSB1c2VyIG5hbWUiLCJleHAiOjE3NjI5NzY3OTYsImlhdCI6MTcwODk3Njc5NiwiaXNzIjoibXkgd2Vic2l0ZSBuYW1lIGhlcmUifQ.e_6WNjdKd7vO3ZTsH9GYT08miDK--mPHoSgK-gpO0S_jSdlRZCWTMCsaUaHHjervWiT35Ax--J0KdltlibEdE_kQUzczT73srxtdkgeWaOxfrEMelw1M6DXDEbltg3qgpMlpA4dMEXfqmWG0Js3fKRGPLOX6untDVh51LrAlZzICUyhYFq_G7hh1N1-zCzzx_dXEOHLNyGEw_nl2gpO30NfFxo3hP5tvky-T5edTmyehpDTMeyqUEZD-W2Ic45cSZIMcQW-SO9Msn9QxnqdbgkNzJhMUSuVQsisAwvGPlIa00TXbRRRH6_Ei3kmQVb1Y0d1oTZ6pie2PipT2MO3Wmw
+
+Header:
+{
+  "alg": "RS256",
+  "kid": "7ef72a01e9421c64462c6fd8d5adb150872f14f76477451612d6c7fae44a2c56",
+  "typ": "JWT"
+}
+
+Payload:
+{
+  "username": "random user name",
+  "exp": 1762976796,
+  "iat": 1708976796,
+  "iss": "my website name here"
+}
+
+
+the three base64 encoded fields: header, payload, signature
+
+
+
+According to Gradebot, the JWT needs an expiration date and a kid. The JWK needs a kid, an N, and an E.
+Everything else is optional
+
+
+
+
+
+
+files:
+
+attempt.py - att
+project1.py - chg
+main.py - uses chgt
+attempt.py - chgt
+
+test.py - testing file for my own test suite
